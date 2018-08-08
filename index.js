@@ -1,14 +1,19 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import airforce from './airforce'
+import airforce from './airforce.js'
 import useStore from './useStore'
 import filters from './filters/index'
-// 注册过滤器
-Object.keys(filters).forEach(key => {
-    Vue.filter(key, filters[key])
-});
-//注册状态跟工具
-Vue.use(useStore);
+const configs = require("./configs.js").default;
+if(configs.filters){
+    // 注册过滤器
+    Object.keys(filters).forEach(key => {
+        Vue.filter(key, filters[key])
+    });
+}
+if(configs.useStore) {
+    //注册状态跟工具
+    Vue.use(useStore);
+}
 
 Vue.use(Vuex)
 

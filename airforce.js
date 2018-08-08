@@ -11,18 +11,20 @@ const state = initState
 
 // getters
 const getters = {
-  airforce: state => state
+  airforce: state=>state
 }
 
 // actions
 const actions = {
   action ({ commit }, data) {
-    if (data.loading) {
-      VUX.loading.show({
-        text: ''
-      })
-    }
-    const {goods, ...restData} = data
+    // if (data.loading) {
+    //   VUX.loading.show({
+    //     text: ''
+    //   })
+    // }
+    const goods = data.goods;
+    const restData = data;
+    // const {goods, ...restData} = data
     if (data.method && (data.url || data.fullUrl)) {
       if(data.isFormData){
         const toFormData = data.data;
@@ -42,7 +44,7 @@ const actions = {
         }
         return res
       }).then(result => {
-        VUX.loading.hide();
+        // VUX.loading.hide();
         data.goods = _.merge({}, data.goods, result.data)
         commit(AIRFORCE_DO, { data })
         if (data.callback) {
@@ -61,22 +63,22 @@ const actions = {
         if (data.success) {
           data.success(res)
         };
-        //登录超时请重新登录
-        if(res.code === 10010){
-            commit(AIRFORCE_LEAVE, { data:{moduleName:'login_post'}});
-            delete localStorage.login_post;
-            VUX.toast.text(res.message);
-            VUX._this.$router.push("/Loogin");
-        };
+        // //登录超时请重新登录
+        // if(res.code === 10010){
+        //     commit(AIRFORCE_LEAVE, { data:{moduleName:'login_post'}});
+        //     delete localStorage.login_post;
+        //     VUX.toast.text(res.message);
+        //     VUX._this.$router.push("/Loogin");
+        // };
         return res
       }).catch(e => {
-        VUX.loading.hide();
+        // VUX.loading.hide();
         if (data.error) {
           data.error(e)
           return e
         }
         if (!data.noError && e.data && e.data.message) {
-          VUX.toast.text(e.data.message)
+          // VUX.toast.text(e.data.message)
         }
         return e
       })

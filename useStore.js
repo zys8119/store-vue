@@ -4,12 +4,8 @@ const plugin = {
     install (Vue) {
         Vue.prototype.$utils = utils;
         Vue.mixin({
-            methods:{
-                ...mapActions(['action'])
-            },
-            computed:{
-                ...mapGetters(['airforce']),
-            }
+            methods:mapActions(['action']),
+            computed:mapGetters(['airforce'])
         })
     }
 }

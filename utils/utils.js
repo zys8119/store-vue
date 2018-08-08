@@ -3,6 +3,17 @@ try {
     initUtils = require("@/utils/index.js").default;
 }catch (e){
     initUtils = {};
+    console.error(`【store-vue】警告警告：请确认 @ 路径下的 'utils/index.js' 是否存在。如果存在且该警告还在，请手动重新引用加载store-vue或者重启项目`)
+    console.warn(`'utils/index.js' 是用于设置vue全局工具函数\n
+    示例:utils/index.js
+    
+        export default {
+            a:(val){
+                return val + 1;
+            },
+            //....
+        }
+    `)
 }
 export default {
   isEmail (email) {
@@ -352,5 +363,5 @@ export default {
         var arrEntities={'lt':'<','gt':'>','nbsp':' ','amp':'&','quot':'"'};
         return str.replace(/&(lt|gt|nbsp|amp|quot);/ig,function(all,t){return arrEntities[t];});
     },
-    ...initUtils
+    // ...initUtils
 }

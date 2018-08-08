@@ -1,6 +1,6 @@
 {
   "name": "store-vue",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "store-vue插件",
   "main": "index.js",
   "bin": "index.js",
@@ -21,5 +21,7 @@
     "axios": "^0.18.0",
     "vue": "^2.5.16",
     "vuex": "^3.0.1"
-  }
+  },
+  "_from": "store-vue@1.0.2",
+  "_resolved": "http://registry.npm.taobao.org/store-vue/download/store-vue-1.0.2.tgz"
 }
