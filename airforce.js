@@ -2,6 +2,7 @@ import axios from './axios'
 import initState from './initState'
 import Vue from 'vue'
 import _ from 'lodash'
+const configs = require("./configs.js").default;
 
 const AIRFORCE_DO = 'AIRFORCE_DO'
 const AIRFORCE_LEAVE = 'AIRFORCE_LEAVE'
@@ -34,6 +35,7 @@ const actions = {
         }
         restData.data = FormDataObj;
       };
+      configs.axiosBefore(data);
       return axios(restData).then(res => {
         let result
         try {
@@ -63,6 +65,7 @@ const actions = {
         if (data.success) {
           data.success(res)
         };
+          configs.axiosThen(res,data,commit);
         // //登录超时请重新登录
         // if(res.code === 10010){
         //     commit(AIRFORCE_LEAVE, { data:{moduleName:'login_post'}});
@@ -72,6 +75,7 @@ const actions = {
         // };
         return res
       }).catch(e => {
+          configs.axiosCatch(e,data,commit);
         // VUX.loading.hide();
         if (data.error) {
           data.error(e)

@@ -23,4 +23,17 @@ export default Object.assign({
     //是否设置初始化vuex数据配置，默认true，开启
     //说明：设置初始化的vuex数据
     initState:true,
+    //发请求前
+    //data请求参数
+    axiosBefore:(data)=>{},
+    //发请求成功
+    //res回调数据
+    //data请求参数
+    //commit方法
+    axiosThen:(res,data,commit)=>{},
+    //发请求失败
+    //err回调数据
+    //data请求参数
+    //commit方法
+    axiosCatch:(err,data,commit)=>{},
 },configs)
