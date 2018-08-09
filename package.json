@@ -1,6 +1,6 @@
 {
   "name": "store-vue",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "description": "store-vue插件",
   "main": "index.js",
   "bin": "index.js",
@@ -19,7 +19,6 @@
   "homepage": "https://github.com/zys8119/store-vue#readme",
   "dependencies": {
     "axios": "^0.18.0",
-    "vue": "^2.5.16",
     "vuex": "^3.0.1"
   },
   "_from": "store-vue@1.0.2",
