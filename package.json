@@ -1,9 +1,8 @@
 {
   "name": "store-vue",
-  "version": "1.0.8",
+  "version": "1.1.6",
   "description": "store-vue插件",
-  "main": "index.js",
-  "bin": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel src -d dist"
@@ -20,10 +19,9 @@
   "homepage": "https://github.com/zys8119/store-vue#readme",
   "dependencies": {
     "axios": "^0.18.0",
+    "babel-plugin-transform-object-assign": "^6.22.0",
     "vuex": "^3.0.1"
   },
-  "_from": "store-vue@1.0.2",
-  "_resolved": "http://registry.npm.taobao.org/store-vue/download/store-vue-1.0.2.tgz",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",

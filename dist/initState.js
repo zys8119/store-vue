@@ -4,6 +4,8 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 var _index = require("./index");
 
 var _index2 = _interopRequireDefault(_index);
@@ -21,7 +23,7 @@ if (configs.initState) {
         console.warn("'store/index.js' \u662F\u7528\u4E8E\u8BBE\u7F6Evuex\u521D\u59CB\u6570\u636E\u7528\u7684\n\n    \u793A\u4F8B:store/index.js\n    \n        export default {\n            a:1,\n            //....\n        }\n    ");
     }
 }
-exports.default = Object.assign({
+exports.default = _extends({
     /**
      * @input 用于兼容input组件数据双向绑定问题，
      * @param event 写入的值
