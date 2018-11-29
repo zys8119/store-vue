@@ -1,5 +1,5 @@
 # store-vue [![npm](https://img.shields.io/badge/npm-Install-zys8119.svg?colorB=cb3837&style=flat-square)](https://www.npmjs.com/package/store-vue)  [![github](https://img.shields.io/badge/github-<Code>-zys8119.svg?colorB=000000&style=flat-square)](https://github.com/zys8119/store-vue)
-这个是一个vue状态管理器、vue过滤、vue工具的集合
+这个是一个vue状态管理器、vue过滤、vue工具、MockJs的集合
 
 ## 安装
 

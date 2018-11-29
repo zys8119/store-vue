@@ -1,13 +1,26 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import Mock from 'mockjs'
 import airforce from './airforce.js'
 import useStore from './useStore'
 import filters from './filters/index'
+import MockConfig from './Mock/index'
 const configs = require("./configs.js").default;
 if(configs.filters){
     // 注册过滤器
     Object.keys(filters).forEach(key => {
         Vue.filter(key, filters[key])
+    });
+}
+if(configs.Mock) {
+    //ajax请求拦截
+    MockConfig.forEach(M=>{
+        M((...Arg)=>{
+            if(Arg.length > 0 && Arg[0] !== false){
+                let mockData = Arg.slice(1);
+                Mock.mock(...mockData);
+            }
+        });
     });
 }
 if(configs.useStore) {

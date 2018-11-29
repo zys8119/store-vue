@@ -19,4 +19,6 @@ if(configs.filters){
     }
 }
 
-export default filters
+export default Object.assign({
+
+},filters)

@@ -20,6 +20,9 @@ export default Object.assign({
     //是否映射组件vuex数据及工具，默认true，开启
     //说明：该参数用于给每一个组件添加action方法和airfoece计算属性
     useStore:true,
+    //是否加载MockJs，默认true，开启
+    //说明：ajax请求拦截
+    Mock:true,
     //是否设置初始化vuex数据配置，默认true，开启
     //说明：设置初始化的vuex数据
     initState:true,
