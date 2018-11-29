@@ -74,6 +74,9 @@ var getters = {
         return res;
       }).then(function (result) {
         // VUX.loading.hide();
+        if (data.then) {
+          data.then(result.data);
+        }
         data.goods = _lodash2.default.merge({}, data.goods, result.data);
         commit(AIRFORCE_DO, { data: data });
         if (data.callback) {

@@ -3,6 +3,9 @@
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 var configs = require("../configs.js").default;
 var filters = {};
 if (configs.filters) {
@@ -15,4 +18,4 @@ if (configs.filters) {
     }
 }
 
-exports.default = filters;
+exports.default = _extends({}, filters);
