@@ -51,9 +51,13 @@ if (configs.Mock) {
                 Arg[_key] = arguments[_key];
             }
 
-            if (Arg.length > 0 && Arg[0] !== false) {
-                var mockData = Arg.slice(1);
-                _mockjs2.default.mock.apply(_mockjs2.default, _toConsumableArray(mockData));
+            if (Arg.length > 0) {
+                if (Arg[0] === false) {
+                    var mockData = Arg.slice(1);
+                    _mockjs2.default.mock.apply(_mockjs2.default, _toConsumableArray(mockData));
+                } else {
+                    _mockjs2.default.mock.apply(_mockjs2.default, Arg);
+                }
             }
         });
     });

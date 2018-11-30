@@ -16,9 +16,14 @@ if(configs.Mock) {
     //ajax请求拦截
     MockConfig.forEach(M=>{
         M((...Arg)=>{
-            if(Arg.length > 0 && Arg[0] !== false){
-                let mockData = Arg.slice(1);
-                Mock.mock(...mockData);
+            if(Arg.length > 0){
+                if(Arg[0] === false){
+                    let mockData = Arg.slice(1);
+                    Mock.mock(...mockData);
+                }else {
+                    Mock.mock(...Arg);
+                }
+
             }
         });
     });

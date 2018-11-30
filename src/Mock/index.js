@@ -9,12 +9,10 @@ if(configs.Mock){
         console.warn(`'Mock/index.js' 是用于拦截ajax请求\n
     示例:Mock/index.js
     
-        export default {
-            a:(val){
-                return val + 1;
-            },
+        export default [
+            e=>e(..Arg),
             //....
-        }
+        ]
     `)
     }
 }
