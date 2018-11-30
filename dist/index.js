@@ -34,8 +34,6 @@ var _index4 = _interopRequireDefault(_index3);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
-
 var configs = require("./configs.js").default;
 if (configs.filters) {
     // 注册过滤器
@@ -47,17 +45,8 @@ if (configs.Mock) {
     //ajax请求拦截
     _index4.default.forEach(function (M) {
         M(function () {
-            for (var _len = arguments.length, Arg = Array(_len), _key = 0; _key < _len; _key++) {
-                Arg[_key] = arguments[_key];
-            }
-
-            if (Arg.length > 0) {
-                if (Arg[0] === false) {
-                    var mockData = Arg.slice(1);
-                    _mockjs2.default.mock.apply(_mockjs2.default, _toConsumableArray(mockData));
-                } else {
-                    _mockjs2.default.mock.apply(_mockjs2.default, Arg);
-                }
+            if (arguments.length > 0 && (arguments.length <= 0 ? undefined : arguments[0]) !== false) {
+                _mockjs2.default.mock.apply(_mockjs2.default, arguments);
             }
         });
     });
