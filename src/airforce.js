@@ -47,8 +47,8 @@ const actions = {
         return res
       }).then(result => {
         // VUX.loading.hide();
-        if (data.then) {
-            data.then(result.data)
+        if (data.resthen) {
+            data.resthen(result)
         }
         data.goods = _.merge({}, data.goods, result.data)
         commit(AIRFORCE_DO, { data })
