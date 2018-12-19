@@ -24,6 +24,9 @@ exports.default = _extends({
     //是否加载MockJs，默认true，开启
     //说明：ajax请求拦截
     Mock: true,
+    //是否自定义接口地址
+    //说明：方便切换接口地址，默认false不开启
+    $$rootUrl: false,
     //是否设置初始化vuex数据配置，默认true，开启
     //说明：设置初始化的vuex数据
     initState: true,
