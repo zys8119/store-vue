@@ -15,6 +15,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var plugin = {
     install: function install(Vue) {
+        try {
+            _utils2.default.action = (0, _vuex.mapActions)(['action']).action;
+            _utils2.default.airforce = (0, _vuex.mapGetters)(['airforce']).airforce;
+        } catch (e) {}
         Vue.prototype.$utils = _utils2.default;
         Vue.mixin({
             methods: (0, _vuex.mapActions)(['action']),

@@ -41,5 +41,20 @@ export default Object.assign({
                 }
             })
         }
-    }
+    },
+	/**
+     * @input 用于兼容input组件数据双向绑定问题，
+     * @param event 写入的值
+     * @param fieldName 字段名
+     * @param moduleName 模块名，可选
+     * 说明：如果moduleName不存在，则fieldName就是模块名
+     * */
+	$$setRootUrl:(to)=>{
+		store.commit('AIRFORCE_DO', {
+			data: {
+				moduleName: "$$rootUrl",
+				goods: to.meta.$$rootUrl,
+			}
+		});
+	}
 },initState);
