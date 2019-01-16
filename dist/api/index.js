@@ -6,6 +6,30 @@ Object.defineProperty(exports, "__esModule", {
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
+exports.default = function () {
+    var _this = this;
+
+    if (initApi) {
+        var _loop = function _loop(keyName) {
+            Api3[keyName] = function () {
+                var _Api2$keyName;
+
+                for (var _len = arguments.length, params = Array(_len), _key = 0; _key < _len; _key++) {
+                    params[_key] = arguments[_key];
+                }
+
+                (_Api2$keyName = Api2[keyName]).call.apply(_Api2$keyName, [_this].concat(params));
+            };
+        };
+
+        for (var keyName in Api2) {
+            _loop(keyName);
+        }
+        initApi = false;
+    }
+    return Api3;
+};
+
 var configs = require("../configs.js").default;
 var Api = {};
 if (configs.api) {
@@ -17,4 +41,6 @@ if (configs.api) {
         console.warn("'api/index.js' \u662F\u7528\u4E8E\u8BBE\u7F6E\u9879\u76EE\u5168\u5C40api\u51FD\u6570\u6574\u5408\n\n    \u793A\u4F8B:api/index.js\n    \n        export default {\n            apiName:(){\n                this.action(configs);\n            },\n            //....\n        }\n    ");
     }
 }
-exports.default = _extends({}, Api);
+var Api2 = _extends({}, Api);
+var Api3 = {};
+var initApi = true;

@@ -18,6 +18,19 @@ if(configs.api){
     `)
     }
 }
-export default Object.assign({
+let Api2 = Object.assign({
 
-},Api)
+},Api);
+let Api3 = {};
+let initApi = true;
+export default function () {
+    if(initApi){
+        for(let keyName in Api2){
+            Api3[keyName] = (...params)=>{
+                Api2[keyName].call(this,...params);
+            };
+        }
+        initApi = false;
+    }
+    return Api3;
+}
