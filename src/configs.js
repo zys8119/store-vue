@@ -14,6 +14,8 @@ try {
     `)
 }
 export default Object.assign({
+    //debug开发环境，默认production，开发模式，如需设置，请设置环境变量 process.env.NODE_ENV
+    debug:"production",
     //是否加载过滤器模块，默认true，开启
     //说明：全局注册过滤器
     filters:true,
@@ -29,6 +31,11 @@ export default Object.assign({
     //是否设置初始化vuex数据配置，默认true，开启
     //说明：设置初始化的vuex数据
     initState:true,
+    //是否设置启用api功能，默认true，启用
+    api:true,
+    //是否设置启用全局工具功能，默认true，启用
+    //说明：全局工具库
+    $utils:true,
     //发请求前
     //data请求参数
     axiosBefore:(data)=>{},

@@ -5,10 +5,16 @@ Object.defineProperty(exports, "__esModule", {
 });
 
 exports.default = function (config) {
-  var rootUrl = $$rootUrl;
+  var rootUrl = "";
+  try {
+    rootUrl = $$rootUrl;
+  } catch (e) {}
+  if (typeof configs.$$rootUrl == "string") {
+    rootUrl = configs.$$rootUrl;
+  };
   if (configs.$$rootUrl && _index2.default.state.airforce && _index2.default.state.airforce.$$rootUrl) {
     rootUrl = _index2.default.state.airforce.$$rootUrl;
-  }
+  };
   config.url = rootUrl + config.url;
   if (config.fullUrl) {
     config.url = config.fullUrl;

@@ -1,10 +1,20 @@
 import { mapActions, mapGetters } from 'vuex'
+const configs = require("./configs.js").default;
 import utils from './utils/utils'
+import Api from './api/index'
+const methods = {
+    action:mapActions(['action']).action
+};
+if(configs.api){
+    methods.api = Api;
+};
 const plugin = {
     install (Vue) {
-        Vue.prototype.$utils = utils;
+        if(configs.$utils){
+            Vue.prototype.$utils = utils;
+        };
         Vue.mixin({
-            methods:mapActions(['action']),
+            methods,
             computed:mapGetters(['airforce'])
         })
     }

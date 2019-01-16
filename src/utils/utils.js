@@ -1,10 +1,12 @@
+const configs = require("../configs.js").default;
 let initUtils = {};
-try {
-    initUtils = require("@/utils/index.js").default;
-}catch (e){
-    initUtils = {};
-    console.error(`【store-vue】警告警告：请确认 @ 路径下的 'utils/index.js' 是否存在。如果存在且该警告还在，请手动重新引用加载store-vue或者重启项目`)
-    console.warn(`'utils/index.js' 是用于设置vue全局工具函数\n
+if(configs.$utils){
+    try {
+        initUtils = require("@/utils/index.js").default;
+    }catch (e){
+        initUtils = {};
+        console.error(`【store-vue】警告警告：请确认 @ 路径下的 'utils/index.js' 是否存在。如果存在且该警告还在，请手动重新引用加载store-vue或者重启项目`)
+        console.warn(`'utils/index.js' 是用于设置vue全局工具函数\n
     示例:utils/index.js
     
         export default {
@@ -14,7 +16,8 @@ try {
             //....
         }
     `)
-}
+    }
+};
 export default Object.assign({
     isEmail (email) {
         return /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/.test(email)

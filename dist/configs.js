@@ -15,6 +15,8 @@ try {
     console.warn("'store/configs.js' \u662F\u7528\u4E8E\u8BBE\u7F6Estore-vue\u7684\u914D\u7F6E\u9879\n\n    \u793A\u4F8B:store/configs.js\n    \n        export default {\n            filters:false\n            //....\n        }\n    ");
 }
 exports.default = _extends({
+    //debug开发环境，默认production，开发模式，如需设置，请设置环境变量 process.env.NODE_ENV
+    debug: "production",
     //是否加载过滤器模块，默认true，开启
     //说明：全局注册过滤器
     filters: true,
@@ -30,6 +32,11 @@ exports.default = _extends({
     //是否设置初始化vuex数据配置，默认true，开启
     //说明：设置初始化的vuex数据
     initState: true,
+    //是否设置启用api功能，默认true，启用
+    api: true,
+    //是否设置启用全局工具功能，默认true，启用
+    //说明：全局工具库
+    $utils: true,
     //发请求前
     //data请求参数
     axiosBefore: function axiosBefore(data) {},

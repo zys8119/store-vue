@@ -43,6 +43,8 @@ new Vue({
             this.airforce
             //utils
             this.utils
+            //api
+            this.api
         }
     }
 </script>

@@ -4,13 +4,19 @@ import initState from './initState'
 const configs = require("./configs.js").default;
 
 export default function (config) {
-  let rootUrl = $$rootUrl
+  let rootUrl = "";
+  try {
+    rootUrl = $$rootUrl;
+  }catch (e){}
+  if(typeof configs.$$rootUrl == "string"){
+      rootUrl = configs.$$rootUrl;
+  };
   if(configs.$$rootUrl && store.state.airforce && store.state.airforce.$$rootUrl){
       rootUrl = store.state.airforce.$$rootUrl;
-  }
-  config.url = rootUrl + config.url
+  };
+  config.url = rootUrl + config.url;
   if (config.fullUrl) {
-    config.url = config.fullUrl
+    config.url = config.fullUrl;
   }
   return axios(config)
 }
