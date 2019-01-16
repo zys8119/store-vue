@@ -33,7 +33,7 @@ exports.default = _extends({
     //说明：设置初始化的vuex数据
     initState: true,
     //是否设置启用api功能，默认true，启用
-    $api: true,
+    api: true,
     //是否设置启用全局工具功能，默认true，启用
     //说明：全局工具库
     $utils: true,

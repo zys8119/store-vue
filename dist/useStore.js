@@ -26,9 +26,9 @@ var plugin = {
         };
         Vue.mixin({
             data: function data() {
-                if (configs.$api) {
+                if (configs.api) {
                     return {
-                        $api: _index2.default
+                        api: _index2.default
                     };
                 };
                 return {};

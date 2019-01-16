@@ -1,6 +1,6 @@
 {
   "name": "store-vue",
-  "version": "1.2.8",
+  "version": "1.2.9",
   "description": "store-vue插件",
   "main": "dist/index.js",
   "scripts": {

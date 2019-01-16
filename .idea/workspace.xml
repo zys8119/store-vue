@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b58a2ae-d4f7-4a4f-9f9c-1f3a2b05514d" name="Default" comment="">
+    <list default="true" id="6b58a2ae-d4f7-4a4f-9f9c-1f3a2b05514d" name="Default" comment="api优化,发布v1.2.8版本">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/dist/api/index.js" afterPath="$PROJECT_DIR$/dist/api/index.js" />
       <change beforePath="$PROJECT_DIR$/dist/configs.js" afterPath="$PROJECT_DIR$/dist/configs.js" />
       <change beforePath="$PROJECT_DIR$/dist/useStore.js" afterPath="$PROJECT_DIR$/dist/useStore.js" />
       <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/src/api/index.js" afterPath="$PROJECT_DIR$/src/api/index.js" />
       <change beforePath="$PROJECT_DIR$/src/configs.js" afterPath="$PROJECT_DIR$/src/configs.js" />
       <change beforePath="$PROJECT_DIR$/src/useStore.js" afterPath="$PROJECT_DIR$/src/useStore.js" />
     </list>
@@ -42,10 +40,10 @@
         <option value="$PROJECT_DIR$/src/axios.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/configs.js" />
-        <option value="$PROJECT_DIR$/src/useStore.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/api/index.js" />
+        <option value="$PROJECT_DIR$/src/useStore.js" />
+        <option value="$PROJECT_DIR$/src/configs.js" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -123,12 +121,6 @@
             <path>
               <item name="store-vue" type="b2602c69:ProjectViewProjectNode" />
               <item name="store-vue" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="dist" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="store-vue" type="b2602c69:ProjectViewProjectNode" />
-              <item name="store-vue" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
@@ -195,7 +187,7 @@
       <workItem from="1543539179670" duration="5466000" />
       <workItem from="1543798627081" duration="13000" />
       <workItem from="1543799558896" duration="246000" />
-      <workItem from="1547601116505" duration="8453000" />
+      <workItem from="1547601116505" duration="10368000" />
     </task>
     <task id="LOCAL-00001" summary="新增api模块">
       <created>1547604116256</created>
@@ -211,11 +203,18 @@
       <option name="project" value="LOCAL" />
       <updated>1547608286262</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="api优化,发布v1.2.8版本">
+      <created>1547614866793</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1547614866794</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22554000" />
+    <option name="totallyTimeSpent" value="24469000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -299,7 +298,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="新增api模块" />
     <MESSAGE value="api优化" />
-    <option name="LAST_COMMIT_MESSAGE" value="api优化" />
+    <MESSAGE value="api优化,发布v1.2.8版本" />
+    <option name="LAST_COMMIT_MESSAGE" value="api优化,发布v1.2.8版本" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -533,14 +533,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/configs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -569,32 +561,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/useStore.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-405">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/configs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="34" column="8" lean-forward="false" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/useStore.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-213">
-          <caret line="3" column="30" lean-forward="true" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
-          <folding>
-            <element signature="e#95#128#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist/api/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -605,16 +571,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/api/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+        <state relative-caret-position="56">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/configs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="34" column="4" lean-forward="false" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/useStore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="3" column="29" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+          <folding>
+            <element signature="e#95#128#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/configs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-216">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/useStore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-160">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="31" lean-forward="true" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+        <state relative-caret-position="459">
+          <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
           <folding />
         </state>
       </provider>
