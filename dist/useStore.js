@@ -19,19 +19,22 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var configs = require("./configs.js").default;
 
-var methods = {
-    action: (0, _vuex.mapActions)(['action']).action
-};
-if (configs.api) {
-    methods.api = _index2.default;
-};
 var plugin = {
     install: function install(Vue) {
         if (configs.$utils) {
             Vue.prototype.$utils = _utils2.default;
         };
         Vue.mixin({
-            methods: methods,
+            data: function data() {
+                if (configs.api) {
+                    return {
+                        api: _index2.default
+                    };
+                };
+                return {};
+            },
+
+            methods: (0, _vuex.mapActions)(['action']),
             computed: (0, _vuex.mapGetters)(['airforce'])
         });
     }
