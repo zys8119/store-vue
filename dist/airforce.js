@@ -6,6 +6,10 @@ Object.defineProperty(exports, "__esModule", {
 
 var _mutations;
 
+var _Promise = require('babel-plugin-transform-polyfills/polyfills/Promise');
+
+var _Promise2 = _interopRequireDefault(_Promise);
+
 var _axios = require('./axios');
 
 var _axios2 = _interopRequireDefault(_axios);
@@ -83,11 +87,11 @@ var getters = {
           data.callback(result.data);
         }
         if (result.status >= 200 && result.status < 300 && result.data.status !== 'ERROR') {
-          return new Promise(function (resolve, reject) {
+          return (0, _Promise2.default)(function (resolve, reject) {
             resolve(result.data);
           });
         } else {
-          return new Promise(function (resolve, reject) {
+          return (0, _Promise2.default)(function (resolve, reject) {
             reject(result);
           });
         }
