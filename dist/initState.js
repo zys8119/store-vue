@@ -4,8 +4,6 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _extends = _assign2.default || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
 var _assign = require("babel-plugin-transform-polyfills/polyfills/Object/assign");
 
 var _assign2 = _interopRequireDefault(_assign);
@@ -27,7 +25,7 @@ if (configs.initState) {
         console.warn("'store/index.js' \u662F\u7528\u4E8E\u8BBE\u7F6Evuex\u521D\u59CB\u6570\u636E\u7528\u7684\n\n    \u793A\u4F8B:store/index.js\n    \n        export default {\n            a:1,\n            //....\n        }\n    ");
     }
 }
-exports.default = _extends({
+exports.default = (0, _assign2.default)({
     /**
      * @input 用于兼容input组件数据双向绑定问题，
      * @param event 写入的值

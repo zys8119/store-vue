@@ -6,8 +6,6 @@ Object.defineProperty(exports, "__esModule", {
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-var _extends = _assign2.default || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
 var _assign = require("babel-plugin-transform-polyfills/polyfills/Object/assign");
 
 var _assign2 = _interopRequireDefault(_assign);
@@ -25,7 +23,7 @@ if (configs.$utils) {
         console.warn("'utils/index.js' \u662F\u7528\u4E8E\u8BBE\u7F6Evue\u5168\u5C40\u5DE5\u5177\u51FD\u6570\n\n    \u793A\u4F8B:utils/index.js\n    \n        export default {\n            a:(val){\n                return val + 1;\n            },\n            //....\n        }\n    ");
     }
 };
-exports.default = _extends({
+exports.default = (0, _assign2.default)({
     isEmail: function isEmail(email) {
         return (/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/.test(email)
         );

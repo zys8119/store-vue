@@ -4,8 +4,6 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _extends = _assign2.default || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
 var _assign = require("babel-plugin-transform-polyfills/polyfills/Object/assign");
 
 var _assign2 = _interopRequireDefault(_assign);
@@ -24,4 +22,4 @@ if (configs.filters) {
     }
 }
 
-exports.default = _extends({}, filters);
+exports.default = (0, _assign2.default)({}, filters);

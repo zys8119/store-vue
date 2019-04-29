@@ -4,8 +4,6 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _extends = _assign2.default || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
 exports.default = function () {
     var _this = this;
 
@@ -47,6 +45,6 @@ if (configs.api) {
         console.warn("'api/index.js' \u662F\u7528\u4E8E\u8BBE\u7F6E\u9879\u76EE\u5168\u5C40api\u51FD\u6570\u6574\u5408\n\n    \u793A\u4F8B:api/index.js\n    \n        export default {\n            apiName:(){\n                this.action(configs);\n            },\n            //....\n        }\n    ");
     }
 }
-var Api2 = _extends({}, Api);
+var Api2 = (0, _assign2.default)({}, Api);
 var Api3 = {};
 var initApi = true;
