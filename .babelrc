@@ -1,8 +1,13 @@
 {
   "presets": [
-    "es2015",
-    "react",
-    "stage-2"
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "browsers": ["> 1%", "last 2 versions", "not ie <= 8"]
+        }
+      }
+    ]
   ],
-  "plugins": ["transform-polyfills","transform-object-assign"]
+  "plugins": ["@babel/plugin-transform-reserved-words","transform-polyfills","@babel/plugin-transform-object-super"]
 }
