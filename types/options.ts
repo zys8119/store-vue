@@ -37,6 +37,13 @@ export interface actionData extends AxiosRequestConfig{
     moduleName?:string;
     goods?:any;
     isFormData?:boolean;
+    axiosBefore?(data:actionData):void;
+    resthen?(result:Response):void;
+    callback?(resultData:Response):void;
+    success?(resultData:Response):void;
+    axiosThen?(resultData:Response,data:actionData,commit:actionsOptions):void;
+    axiosCatch?(resultData:Response,data:actionData,commit:actionsOptions):void;
+    error?(resultData:Response):void;
 }
 
 export interface actionsOptions {
