@@ -27,7 +27,7 @@ export default function () {
     if(initApi){
         for(let keyName in Api2){
             Api3[keyName] = (...params)=>{
-                Api2[keyName].call(this,...params);
+                return Api2[keyName].call(this,...params);
             };
         }
         initApi = false;
