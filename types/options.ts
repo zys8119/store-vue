@@ -41,6 +41,7 @@ export interface actionData extends AxiosRequestConfig{
     resthen?(result:Response):void;
     callback?(resultData:Response):void;
     success?(resultData:Response):void;
+    axiosThenBefore?(resultData:Response,data:actionData,commit:actionsOptions):void;
     axiosThen?(resultData:Response,data:actionData,commit:actionsOptions):void;
     axiosCatch?(resultData:Response,data:actionData,commit:actionsOptions):void;
     error?(resultData:Response):void;
@@ -114,12 +115,12 @@ export interface utilsOptions {
 
 //todo apiOptions
 export interface apiOptions {
-    [key:string]:(...args: any)=>void;
+    [key:string]:(...args: Array<any>)=>void;
 }
 
 //todo filtersOptions
 export interface filtersOptions {
-    [key:string]:(...args: any)=>any;
+    [key:string]:(...args: Array<any>)=>any;
 }
 //todo MockConfig
 export interface MockConfig {

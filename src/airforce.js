@@ -24,6 +24,7 @@ const actions = {
     //   })
     // }
     const goods = data.goods;
+    configs.axiosBefore(data);
     const restData = data;
     // const {goods, ...restData} = data
     if (data.method && (data.url || data.fullUrl)) {
@@ -31,11 +32,17 @@ const actions = {
         const toFormData = data.data;
         var FormDataObj = new FormData();
         for(let k in toFormData){
-          FormDataObj.append(k,toFormData[k]);
+            if(
+                Object.prototype.toString.call(toFormData[k]) == "[object Object]" ||
+                Object.prototype.toString.call(toFormData[k]) == "[object Array]"
+            ){
+                FormDataObj.append(k,JSON.stringify(toFormData[k]));
+            }else {
+                FormDataObj.append(k,toFormData[k]);
+            }
         }
         restData.data = FormDataObj;
       };
-      configs.axiosBefore(data);
       return axios(restData).then(res => {
         let result
         try {
@@ -46,6 +53,7 @@ const actions = {
         }
         return res
       }).then(result => {
+        configs.axiosThenBefore(result,data,commit);
         // VUX.loading.hide();
         if (data.resthen) {
             data.resthen(result)
@@ -68,7 +76,7 @@ const actions = {
         if (data.success) {
           data.success(res)
         };
-          configs.axiosThen(res,data,commit);
+        configs.axiosThen(res,data,commit);
         // //登录超时请重新登录
         // if(res.code === 10010){
         //     commit(AIRFORCE_LEAVE, { data:{moduleName:'login_post'}});
