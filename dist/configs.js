@@ -49,6 +49,11 @@ var _default = (0, _assign.default)({
   //res回调数据
   //data请求参数
   //commit方法
+  axiosThenBefore: function axiosThenBefore(res, data, commit) {},
+  //发请求成功
+  //res回调数据
+  //data请求参数
+  //commit方法
   axiosThen: function axiosThen(res, data, commit) {},
   //发请求失败
   //err回调数据

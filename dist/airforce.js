@@ -43,6 +43,7 @@ var actions = {
     //   })
     // }
     var goods = data.goods;
+    configs.axiosBefore(data);
     var restData = data; // const {goods, ...restData} = data
 
     if (data.method && (data.url || data.fullUrl)) {
@@ -51,14 +52,17 @@ var actions = {
         var FormDataObj = new FormData();
 
         for (var k in toFormData) {
-          FormDataObj.append(k, toFormData[k]);
+          if (Object.prototype.toString.call(toFormData[k]) == "[object Object]" || Object.prototype.toString.call(toFormData[k]) == "[object Array]") {
+            FormDataObj.append(k, JSON.stringify(toFormData[k]));
+          } else {
+            FormDataObj.append(k, toFormData[k]);
+          }
         }
 
         restData.data = FormDataObj;
       }
 
       ;
-      configs.axiosBefore(data);
       return (0, _axios.default)(restData).then(function (res) {
         var result;
 
@@ -72,7 +76,8 @@ var actions = {
 
         return res;
       }).then(function (result) {
-        // VUX.loading.hide();
+        configs.axiosThenBefore(result, data, commit); // VUX.loading.hide();
+
         if (data.resthen) {
           data.resthen(result);
         }
