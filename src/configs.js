@@ -33,6 +33,8 @@ export default Object.assign({
     initState:true,
     //是否设置启用api功能，默认true，启用
     api:true,
+    //是否设置启用原生VuexStore功能，默认false，不启用
+    VuexStore:false,
     //是否设置启用全局工具功能，默认true，启用
     //说明：全局工具库
     $utils:true,

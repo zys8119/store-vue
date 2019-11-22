@@ -471,7 +471,8 @@ var _default = (0, _assign.default)({
     return str.replace(/&(lt|gt|nbsp|amp|quot);/ig, function (all, t) {
       return arrEntities[t];
     });
-  }
+  } // ...initUtils
+
 }, initUtils);
 
 exports.default = _default;

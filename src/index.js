@@ -2,6 +2,8 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import Mock from 'mockjs'
 import airforce from './airforce.js'
+import VuexStore from './VuexStore.js'
+import _ from 'lodash'
 import useStore from './useStore'
 import filters from './filters/index'
 import MockConfig from './Mock/index'
@@ -31,9 +33,9 @@ Vue.use(Vuex)
 
 const debug = process.env.NODE_ENV !== 'production';
 
-export default new Vuex.Store({
+export default new Vuex.Store(_.merge({
   modules: {
     airforce
   },
   strict: debug
-})
+},VuexStore))

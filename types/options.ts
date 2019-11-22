@@ -80,6 +80,7 @@ export interface configsOptions {
     $$rootUrl?:boolean,
     initState?:boolean,
     api?:boolean,
+    VuexStore?:boolean,
     $utils?:boolean,
     axiosBefore(data:actionData):void,
     axiosThen(res:Request,data:actionData,commit:Commit):void,

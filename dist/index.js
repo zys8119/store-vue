@@ -13,6 +13,10 @@ var _mockjs = _interopRequireDefault(require("mockjs"));
 
 var _airforce = _interopRequireDefault(require("./airforce.js"));
 
+var _VuexStore = _interopRequireDefault(require("./VuexStore.js"));
+
+var _lodash = _interopRequireDefault(require("lodash"));
+
 var _useStore = _interopRequireDefault(require("./useStore"));
 
 var _index = _interopRequireDefault(require("./filters/index"));
@@ -50,11 +54,11 @@ _vue.default.use(_vuex.default);
 
 var debug = process.env.NODE_ENV !== 'production';
 
-var _default = new _vuex.default.Store({
+var _default = new _vuex.default.Store(_lodash.default.merge({
   modules: {
     airforce: _airforce.default
   },
   strict: debug
-});
+}, _VuexStore.default));
 
 exports.default = _default;

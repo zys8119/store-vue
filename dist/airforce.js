@@ -31,9 +31,9 @@ var state = _initState.default; // getters
 var getters = {
   airforce: function airforce(state) {
     return state;
-  } // actions
+  }
+}; // actions
 
-};
 var actions = {
   action: function action(_ref, data) {
     var commit = _ref.commit;
