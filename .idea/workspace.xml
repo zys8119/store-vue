@@ -1,24 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b58a2ae-d4f7-4a4f-9f9c-1f3a2b05514d" name="Default" comment="发布v1.3.8版本,&#10;1、优化formData数据的处理&#10;2、新增axiosThenBefore请求回调钩子&#10;3、调整axios生命钩子执行顺序">
-      <change afterPath="$PROJECT_DIR$/src/VuexStore.js" afterDir="false" />
+    <list default="true" id="6b58a2ae-d4f7-4a4f-9f9c-1f3a2b05514d" name="Default" comment="发布v1.3.9版本,&#10;1、新增支持原生vuex扩展,默认开启">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/Mock/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/Mock/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/airforce.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/airforce.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/api/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/axios.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/configs.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/configs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/filters/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/filters/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/initState.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/initState.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/public.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/public.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/useStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/useStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/utils/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/utils/utils.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/configs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/configs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/types/options.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/options.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,17 +16,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="26" column="27" lean-forward="true" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+            <state relative-caret-position="60">
+              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dist/airforce.js">
+        <entry file="file://$PROJECT_DIR$/src/configs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="15" column="49" lean-forward="true" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+            <state relative-caret-position="366">
+              <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -102,10 +87,10 @@
         <option value="$PROJECT_DIR$/src/api/index.js" />
         <option value="$PROJECT_DIR$/aa.js" />
         <option value="$PROJECT_DIR$/src/airforce.js" />
-        <option value="$PROJECT_DIR$/src/configs.js" />
         <option value="$PROJECT_DIR$/src/VuexStore.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/types/options.ts" />
+        <option value="$PROJECT_DIR$/src/configs.js" />
         <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
@@ -234,7 +219,7 @@
       <workItem from="1558591705321" duration="27000" />
       <workItem from="1563869296046" duration="995000" />
       <workItem from="1566697235001" duration="718000" />
-      <workItem from="1574409885008" duration="1006000" />
+      <workItem from="1574409885008" duration="2187000" />
     </task>
     <task id="LOCAL-00001" summary="新增api模块">
       <created>1547604116256</created>
@@ -299,17 +284,31 @@
       <option name="project" value="LOCAL" />
       <updated>1566697901726</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="发布v1.3.9版本,&#10;1、新增支持原生vuex扩展,默认不开启">
+      <created>1574410961389</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1574410961389</updated>
+    </task>
+    <task id="LOCAL-00011" summary="发布v1.3.9版本,&#10;1、新增支持原生vuex扩展,默认开启">
+      <created>1574412041068</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1574412041068</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54626000" />
+    <option name="totallyTimeSpent" value="55807000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1273" y="0" width="1294" height="1567" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16612642" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2795786" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -322,7 +321,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32798326" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.4961619" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.54501045" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" order="11" weight="0.329718" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
@@ -408,7 +407,9 @@
     <MESSAGE value="ie兼容问题,发布v1.3.4版本" />
     <MESSAGE value="接口完善,发布v1.3.5版本" />
     <MESSAGE value="发布v1.3.8版本,&#10;1、优化formData数据的处理&#10;2、新增axiosThenBefore请求回调钩子&#10;3、调整axios生命钩子执行顺序" />
-    <option name="LAST_COMMIT_MESSAGE" value="发布v1.3.8版本,&#10;1、优化formData数据的处理&#10;2、新增axiosThenBefore请求回调钩子&#10;3、调整axios生命钩子执行顺序" />
+    <MESSAGE value="发布v1.3.9版本,&#10;1、新增支持原生vuex扩展,默认不开启" />
+    <MESSAGE value="发布v1.3.9版本,&#10;1、新增支持原生vuex扩展,默认开启" />
+    <option name="LAST_COMMIT_MESSAGE" value="发布v1.3.9版本,&#10;1、新增支持原生vuex扩展,默认开启" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/types/airforce.ts" />
@@ -619,13 +620,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/configs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="36" column="13" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/types/options.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-542">
@@ -656,10 +650,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/configs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="26" column="27" lean-forward="true" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+        <state relative-caret-position="60">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
         </state>
       </provider>
     </entry>
