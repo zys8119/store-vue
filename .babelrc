@@ -9,5 +9,5 @@
       }
     ]
   ],
-  "plugins": ["@babel/plugin-transform-reserved-words","transform-polyfills","@babel/plugin-transform-object-super"]
+  "plugins": ["@babel/plugin-transform-reserved-words","@babel/plugin-transform-runtime","@babel/plugin-transform-object-super"]
 }
