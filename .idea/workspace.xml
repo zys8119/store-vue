@@ -1,53 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b58a2ae-d4f7-4a4f-9f9c-1f3a2b05514d" name="Default" comment="发布v1.3.9版本,&#10;1、新增支持原生vuex扩展,默认开启">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Mock/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VuexStore.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/airforce.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filters/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/types/api.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/types/configs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/types/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/types/options.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/types/storeVue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/types/types.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/types/useStore.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/types/utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.babelrc" beforeDir="false" />
+    <list default="true" id="6b58a2ae-d4f7-4a4f-9f9c-1f3a2b05514d" name="Default" comment="发布v1.4.6版本,&#10;ie兼容">
+      <change afterPath="$PROJECT_DIR$/declare.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/Mock/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/VuexStore.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/airforce.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/api/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/axios.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/configs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/filters/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/initState.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/public.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/useStore.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/utils/utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VuexStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/VuexStore.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mock/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Mock/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/VuexStore.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/airforce.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/axios.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/configs.js" beforeDir="false" afterPath="$PROJECT_DIR$/configs.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/filters/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/filters/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/initState.js" beforeDir="false" afterPath="$PROJECT_DIR$/initState.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/useStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/useStore.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/types/options.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/options.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,8 +22,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="JavaScript File" />
+        <option value="tsconfig.json" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -89,8 +50,15 @@
     <option name="width" value="1294" />
     <option name="height" value="1567" />
   </component>
+  <component name="ProjectId" id="1YkQCVnDyvyUReLOmHZ5Dv5w7Y2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="false" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -109,12 +77,12 @@
     <property name="typescript-compiler-editor-notification" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\Desktop\store-vue\src" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\work\store-vue" />
       <recent name="C:\Users\Administrator\Desktop\store-vue\src\Mock" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\store-vue\src" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -150,6 +118,7 @@
       <workItem from="1563869296046" duration="995000" />
       <workItem from="1566697235001" duration="718000" />
       <workItem from="1574409885008" duration="2187000" />
+      <workItem from="1583483986435" duration="802000" />
     </task>
     <task id="LOCAL-00001" summary="新增api模块">
       <created>1547604116256</created>
@@ -233,6 +202,18 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/configs.js" />
+        <option value="$PROJECT_DIR$/VuexStore.js" />
+        <option value="$PROJECT_DIR$/useStore.js" />
+        <option value="$PROJECT_DIR$/axios.js" />
+        <option value="$PROJECT_DIR$/initState.js" />
+        <option value="$PROJECT_DIR$/airforce.js" />
+        <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/declare.js" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -276,14 +257,18 @@
     <option name="LAST_COMMIT_MESSAGE" value="发布v1.3.9版本,&#10;1、新增支持原生vuex扩展,默认开启" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="594" y="108" key="CommitChangelistDialog2" timestamp="1583482822046">
+    <state x="594" y="108" key="CommitChangelistDialog2" timestamp="1583484437786">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="594" y="108" key="CommitChangelistDialog2/-1920.-9.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1583482822046" />
-    <state x="461" y="167" key="SettingsEditor" timestamp="1583482733909">
+    <state x="594" y="108" key="CommitChangelistDialog2/-1920.-9.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1583484437786" />
+    <state x="461" y="167" key="SettingsEditor" timestamp="1583484303076">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="461" y="167" key="SettingsEditor/-1920.-9.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1583482733909" />
+    <state x="461" y="167" key="SettingsEditor/-1920.-9.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1583484303076" />
+    <state x="832" y="261" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1583484434768">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="832" y="261" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/-1920.-9.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1583484434768" />
     <state x="636" y="258" width="647" height="534" key="find.popup" timestamp="1583482779988">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

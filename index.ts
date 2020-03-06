@@ -1,3 +1,4 @@
+import "./declare"
 import Vue from "vue";
 import Vuex from "vuex";
 import VuexStore from './VuexStore'

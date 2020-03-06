@@ -1,8 +1,8 @@
 {
   "name": "store-vue",
-  "version": "1.4.5",
+  "version": "1.4.6",
   "description": "store-vue插件",
-  "main": "dist/index.js",
+  "main": "index.js",
   "typings": "types/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -20,12 +20,11 @@
   "homepage": "https://github.com/zys8119/store-vue#readme",
   "dependencies": {
     "axios": "^0.18.0",
+    "lodash": "^4.17.4",
     "mockjs": "^1.0.1-beta3",
+    "vue": "^2.6.11",
     "vue-router": "^3.0.6",
-    "vuex": "^3.0.1",
-    "lodash": "^4.17.4"
+    "vuex": "^3.0.1"
   },
-  "devDependencies": {
-
-  }
+  "devDependencies": {}
 }

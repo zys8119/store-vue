@@ -16,6 +16,4 @@ if(configs.VuexStore){
     }
 }
 
-export default Object.assign({
-
-},VuexStore)
+export default VuexStore
