@@ -1,6 +1,6 @@
 {
   "name": "store-vue",
-  "version": "1.4.0",
+  "version": "1.4.5",
   "description": "store-vue插件",
   "main": "dist/index.js",
   "typings": "types/index.ts",
@@ -23,14 +23,7 @@
     "mockjs": "^1.0.1-beta3",
     "vue-router": "^3.0.6",
     "vuex": "^3.0.1",
-    "lodash": "^4.17.4",
-    "@babel/cli": "^7.4.4",
-    "@babel/core": "^7.4.4",
-    "@babel/plugin-transform-object-super": "^7.2.0",
-    "@babel/plugin-transform-reserved-words": "^7.2.0",
-    "@babel/preset-env": "^7.4.4",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-plugin-transform-polyfills": "^2.1.0"
+    "lodash": "^4.17.4"
   },
   "devDependencies": {
 

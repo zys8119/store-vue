@@ -2,6 +2,7 @@ import { Route } from 'vue-router'
 import { Commit } from 'vuex'
 import { stateType } from './types'
 import { AxiosRequestConfig } from 'axios'
+import Vue from 'Vue'
 
 //todo state
 export interface state {
@@ -53,10 +54,10 @@ export interface actionsOptions {
 
 export interface actions {
     //添加
-    action(action:actionsOptions,data:actionData):any;
+    action(action:actionsOptions,data?:actionData):any;
 
     //卸载
-    unload(action:actionsOptions,data:actionData):any;
+    unload(action:actionsOptions,data?:actionData):any;
 }
 
 //todo mutations
@@ -73,18 +74,19 @@ export interface mutations {
 
 //todo configsOptions
 export interface configsOptions {
-    debug?:string,
-    filters?:boolean,
-    useStore?:boolean,
-    Mock?:boolean,
-    $$rootUrl?:boolean,
-    initState?:boolean,
-    api?:boolean,
-    VuexStore?:boolean,
-    $utils?:boolean,
-    axiosBefore(data:actionData):void,
-    axiosThen(res:Request,data:actionData,commit:Commit):void,
-    axiosCatch(err:Request,data:actionData,commit:Commit):void,
+    debug?:string;
+    filters?:boolean;
+    useStore?:boolean;
+    Mock?:boolean;
+    $$rootUrl?:boolean;
+    initState?:boolean;
+    api?:boolean;
+    VuexStore?:boolean;
+    $utils?:boolean;
+    axiosBefore(data:actionData):void;
+    axiosThenBefore(res:Request,data:actionData,commit:Commit):void;
+    axiosThen(res:Request,data:actionData,commit:Commit):void;
+    axiosCatch(err:Request,data:actionData,commit:Commit):void;
 }
 
 //todo utilsOptions
@@ -106,11 +108,11 @@ export interface utilsOptions {
     isTel(value):boolean;
     iss(ary):boolean;
     filterDs(data:[]):[];
-    imagesRotate(f:File,fn:void):void;
+    imagesRotate(f:File,fn:(...arg:any)=>void,bool?:boolean):void;
     NoRound(a:string|number,length:number):number|string;
     isIosAndroid():boolean;
-    Logout(_this:object):void;
-    SearchParentKey(parent:object, keyName:string):object;
+    Logout(_this:{[key:string]:any, action?(actionData:actionData):void}):void;
+    SearchParentKey(parent:object & Vue, keyName:string):object;
     escape2Html(str:string):string;
 }
 
