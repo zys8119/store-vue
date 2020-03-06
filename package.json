@@ -1,6 +1,6 @@
 {
   "name": "store-vue",
-  "version": "1.4.6",
+  "version": "1.4.7",
   "description": "store-vue插件",
   "main": "index.js",
   "typings": "types/index.ts",
