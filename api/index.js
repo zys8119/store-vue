@@ -19,7 +19,7 @@ if (configs_1.default.api) {
         console.warn("'api/index.js' \u662F\u7528\u4E8E\u8BBE\u7F6E\u9879\u76EE\u5168\u5C40api\u51FD\u6570\u6574\u5408\n\n    \u793A\u4F8B:api/index.js\n    \n        export default {\n            apiName:(){\n                this.action(configs);\n            },\n            //....\n        }\n    ");
     }
 }
-var Api2 = Object.assign({}, Api);
+var Api2 = Api;
 var Api3 = {};
 var initApi = true;
 function default_1() {

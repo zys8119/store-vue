@@ -18,9 +18,7 @@ if(configs.api){
     `)
     }
 }
-let Api2 = Object.assign({
-
-},Api);
+let Api2 = Api;
 let Api3 = {};
 let initApi = true;
 export default function () {
