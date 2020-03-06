@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var axios_1 = require("./axios");
 var initState_1 = require("./initState");
 var vue_1 = require("vue");
-var lodash_1 = require("lodash");
+var _ = require("lodash");
 var configs = require("./configs.js").default;
 var AIRFORCE_DO = 'AIRFORCE_DO';
 var AIRFORCE_LEAVE = 'AIRFORCE_LEAVE';
@@ -51,7 +51,7 @@ var actions = {
                 if (data.resthen) {
                     data.resthen(result);
                 }
-                data.goods = lodash_1.default.merge({}, data.goods, result.data);
+                data.goods = _.merge({}, data.goods, result.data);
                 commit(AIRFORCE_DO, { data: data });
                 if (data.callback) {
                     data.callback(result.data);
@@ -94,8 +94,8 @@ var actions = {
 var mutations = (_a = {},
     _a[AIRFORCE_DO] = function (state, _a) {
         var data = _a.data;
-        if (lodash_1.default.isObject(data.goods) && !lodash_1.default.isArray(data.goods)) {
-            vue_1.default.set(state, data.moduleName, lodash_1.default.merge({}, state[data.moduleName], data.goods));
+        if (_.isObject(data.goods) && !_.isArray(data.goods)) {
+            vue_1.default.set(state, data.moduleName, _.merge({}, state[data.moduleName], data.goods));
         }
         else {
             vue_1.default.set(state, data.moduleName, data.goods);

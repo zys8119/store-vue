@@ -1,7 +1,7 @@
 import axios from './axios'
 import initState from './initState'
 import Vue from 'vue'
-import _ from 'lodash'
+const _ = require("lodash");
 const configs = require("./configs.js").default;
 
 const AIRFORCE_DO = 'AIRFORCE_DO'
